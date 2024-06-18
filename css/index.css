@@ -1,0 +1,48 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@font-face {
+    font-family: heading;
+    src: url('../fonts/AGhasem.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: mainfont;
+    src: url('../fonts/BHOMA.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: logo;
+    src: url('../fonts/IranNastaliq.ttf') format('truetype');
+}
+
+h3 {
+    font-family: heading;
+}
+
+* {
+    font-family: mainfont;
+    font-size: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.logo-text {
+    font-family: logo;
+    font-size: 42px;
+}
+
+div.card > img {
+    cursor: pointer;
+}
+
+.light-text {
+    font-weight:100;
+}
+
+.badge {
+    position: relative;
+    top: 0;
+    right: 0;
+}
