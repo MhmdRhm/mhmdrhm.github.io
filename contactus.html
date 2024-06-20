@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./scripts/script.js" defer></script>
     <title>طلا یار</title>
 </head>
 
@@ -163,28 +162,83 @@
         </div>
     </nav>
 
-    <div class="row my-3 mx-2" style="max-width: fit-content">
-        <div id="loginRightPart" class="col-sm-6 mb-2"><img src="./images/login.jpg" class="rounded-4 shadow" width="100%"></div>
+    <div class="row my-3 mx-1" style="width: fit-content">
+        <div class="col-sm-6 col-12 text-center mb-2">
+            <img src="./images/contactus.jpg" class="w-100 rounded-5 shadow" alt="">
+        </div>
         <div class="col-sm-6 col-12">
-            <div class="card p-2 border-bottom-0 rounded-0">
-                <h3 class="alert alert-warning text-center">ورود یا ساخت حساب کاربری</h3>
+            <h3 class="alert alert-info">
+                تماس با ما
+            </h3>
+            <form>
                 <div class="row">
-                    <form>
-                        <span>نام کاربری یا ایمیل:</span><input type="text" class="form-control" />
-                        <div class="mt-2"><span>کلمه عبور:</span><input type="text" class="form-control" /></div>
-                        <div class="form-check mt-2">
-                            <input class="form-check-input" type="checkbox" value="" id="rememberMeChk">
-                            <label class="form-check-label" for="flexCheckDefault">
-                              مرا به خاطر بگذار
-                            </label>
-                          </div>
-                        <button id="loginBtn" class="btn btn-primary w-100 mt-3" disabled>ورود</button>
-                        <div class="mt-3 text-center">
-                            حساب کاربری ندارید؟ <a href="#">ثبت نام</a> کنید.
+                    <div class="col-6">
+                        <div class="form-group">
+                            <span class="ps-1">موضوع <span class="text-danger">*</span></span>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>موضوع را انتخاب کنید ...</option>
+                                <option>پیشنهاد</option>
+                                <option value="1">شکایت</option>
+                                <option value="2">پیگیری سفارش</option>
+                                <option value="3">سایر موضوعات</option>
+                            </select>
                         </div>
-                    </form>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <span class="ps-1">نام و نام خانوادگی <span class="text-danger">*</span></span>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div class="form-group">
+                            <span class="ps-1">شماره تماس <span class="text-danger">*</span></span>
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div class="form-group">
+                            <span class="ps-1">ایمیل <span class="text-danger">*</span></span>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div class="form-group">
+                            <span class="ps-1">شماره سفارش</span>
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="form-group">
+                            <span class="ps-1">متن پیام <span class="text-danger">*</span></span>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div>
+                            <label for="formFile" class="form-label d-block">افزودن عکس یا ویدیو حداکثر 50 مگابایت</label>
+                            <button class="btn btn-primary w-100">انتخاب فایل</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </form>
+            <h3 class="alert alert-info mt-3">
+                اطلاعات طلایار
+            </h3>
+            <p style="font-size: 23px; margin-bottom: 1px;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-building" viewBox="0 0 20 20">
+                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+              </svg> دفتر مرکزی:</p>
+            <p class="text-secondary">استان تهران شهر تهران، خیابان گاندی جنوبی - نبش خیابان 21 - پلاک 28</p>
+            <p style="font-size: 23px; margin-bottom: 1px;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-headset" viewBox="0 0 20 20">
+                <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+              </svg> تلفن تماس و فکس:</p>
+            <p class="text-secondary d-flex justify-content-end m-0" style="direction: ltr;">021 - 91000100</p>
+            <p class="text-secondary d-flex justify-content-end" style="direction: ltr;">021 - 61930000</p>
+            <p style="font-size: 23px; margin-bottom: 1px;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 20 20">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+              </svg> ایمیل سازمانی:</p>
+            <p class="text-secondary">info@talayar.com</p>
         </div>
     </div>
 
@@ -195,7 +249,7 @@
                     <h5>لینک های مهم</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">خانه</a></li>
-                        <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">درباره ما</a>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">درباره ما</a>
                         </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">تماس با ما</a>
                         </li>
